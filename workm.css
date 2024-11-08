@@ -1,0 +1,78 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+ 
+.navbar{
+   display: flex; 
+   justify-content: space-between;
+   background-color: #333;
+  
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.logo{
+    color: red;
+    font-size: 1.5em;
+}
+
+.menu-toggle{
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    flex-direction: column;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.profile-card{
+    max-width: 300px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 50px;
+ 
+}
+ .profile-image{
+    border-radius: 50%;
+ }
+
+ @media (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px 5px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+
+    .active{
+        display: flex;
+    }
+ }
